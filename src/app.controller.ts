@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('info')
+  getApiInfo() {
+    return this.appService.getApiInfo();
+  }
 }
